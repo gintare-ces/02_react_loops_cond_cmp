@@ -1,4 +1,4 @@
-function SinglePostAside({ img, title, isSpecial }) {
+function SinglePostAside({ img, title, isSpecial, hideSubtitle }) {
   // destrukturizacija
   // const {img, title} = props
 
@@ -11,7 +11,10 @@ function SinglePostAside({ img, title, isSpecial }) {
     <div className={dynamicClass}>
       <img src={img} alt={title} />
       <h4>{title}</h4>
-      <p>Lorem, ipsum dolor.</p>
+      {/* jei && kaireje yra true tai jis grazina tai kas yra po desine */}
+      {/* jei && false tai jis grazina tai kas yra po kaire ir false reiksme jsx nesigeneruoja */}
+      {!hideSubtitle && <p>Lorem, ipsum dolor.</p>}
+      
     </div>
   );
 }
