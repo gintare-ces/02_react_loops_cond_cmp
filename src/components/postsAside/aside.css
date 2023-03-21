@@ -13,6 +13,9 @@
     grid-template-columns: 55px auto;
     column-gap: 16px;
 }
-.paGrid > *:first-child {
+.paGrid > img{
     grid-row: span 2;
+}
+.specialPost {
+    background-color: #e6e4e4;
 }
